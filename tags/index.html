@@ -176,11 +176,38 @@
   <div class="slimContent">
     
       <div class="widget">
- <!--  <a href="http://127.0.0.1:3000/#/checkWrite" target="_blank" rel="noopener" style="font-size:16px;"  >写文章</a> -->
-   <span  style="font-size:16px;" >  一期一会</span>
+  <!--  <a href="http://127.0.0.1:3000/#/checkWrite" target="_blank" rel="noopener" style="font-size:16px;"  >写文章</a> -->
+  <!--   <span  style="font-size:16px;" >  一期一会</span>-->
+
+  <select id="enote-language-switch">
+    <option value="jap">jap</option>
+    <option value="zh-CN">zh-CN</option>
+    <option value="en">en</option>
+  </select>
 </div>
 
 
+<script>
+  var $els = document.getElementById("enote-language-switch");
+
+  $els.onchange = function (e) {
+
+    e = e || window.event;
+
+    if (e && e.target) {
+      var link = e.target.value;
+
+      if (link === "zh-CN") {
+        window.location.href = `https://lengyuexin.github.io`
+      } else if (link === "jap") {
+        window.location.href = `https://lengyuexin.github.io/enote-ja`
+      } else if (link === "en") {
+        window.location.href = `https://lengyuexin.github.io/enote-en`
+      }
+    }
+  }
+
+</script>
     
       
   <div class="widget">
@@ -325,13 +352,13 @@
           
           <li><a href="/tags/被动语态/">被动语态</a></li>
           
-          <li><a href="/tags/陈述句/">陈述句</a></li>
-          
           <li><a href="/tags/现在完成/">现在完成</a></li>
           
-          <li><a href="/tags/时态/">时态</a></li>
+          <li><a href="/tags/陈述句/">陈述句</a></li>
           
           <li><a href="/tags/虚拟/">虚拟</a></li>
+          
+          <li><a href="/tags/时态/">时态</a></li>
           
           <li><a href="/tags/晚安分享/">晚安分享</a></li>
           
@@ -456,10 +483,66 @@
       </div>
       
       <h3 class="panel-title mb-1x">
+        <a href="/tags/%E7%8E%B0%E5%9C%A8%E5%AE%8C%E6%88%90/" title="#现在完成"># 现在完成</a>
+        <small class="text-muted">(Total 1 articles)</small>
+      </h3>
+      <div class="row">
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:10.765Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/presentComplete/">现在完成</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E7%8E%B0%E5%9C%A8%E5%AE%8C%E6%88%90/" class="label label-default mb">现在完成</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+      </div>
+      
+      <h3 class="panel-title mb-1x">
         <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" title="#陈述句"># 陈述句</a>
         <small class="text-muted">(Total 12 articles)</small>
       </h3>
       <div class="row">
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:10.790Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/statement_10/">陈述句--长句构成</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" class="label label-default mb">陈述句</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
         
         <div class="col-md-6">
           
@@ -494,30 +577,6 @@
      </div>
      <h3 class="article-title" itemprop="name">
        <a class="article-link" href="/2020/03/20/statement_11/">陈述句--公式反用</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" class="label label-default mb">陈述句</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.790Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/statement_10/">陈述句--长句构成</a>
      </h3>
    </div>
    
@@ -590,54 +649,6 @@
      </div>
      <h3 class="article-title" itemprop="name">
        <a class="article-link" href="/2020/03/20/statement_3/">陈述句(主谓宾+宾补)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" class="label label-default mb">陈述句</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.842Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/statement_4/">陈述句(情态动词)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" class="label label-default mb">陈述句</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.866Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/statement_7/">陈述句-高频扩充-下</a>
      </h3>
    </div>
    
@@ -749,29 +760,21 @@
 
         </div>
         
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/%E7%8E%B0%E5%9C%A8%E5%AE%8C%E6%88%90/" title="#现在完成"># 现在完成</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
         <div class="col-md-6">
           
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.765Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:10.842Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/presentComplete/">现在完成</a>
+       <a class="article-link" href="/2020/03/20/statement_4/">陈述句(情态动词)</a>
      </h3>
    </div>
    
    <div class="panel-footer">
      
-      <a href="/tags/%E7%8E%B0%E5%9C%A8%E5%AE%8C%E6%88%90/" class="label label-default mb">现在完成</a>
+      <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" class="label label-default mb">陈述句</a>
      
      
    </div>
@@ -781,29 +784,21 @@
 
         </div>
         
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/%E6%97%B6%E6%80%81/" title="#时态"># 时态</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
         <div class="col-md-6">
           
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.895Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:10.866Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/tense/">时态</a>
+       <a class="article-link" href="/2020/03/20/statement_7/">陈述句-高频扩充-下</a>
      </h3>
    </div>
    
    <div class="panel-footer">
      
-      <a href="/tags/%E6%97%B6%E6%80%81/" class="label label-default mb">时态</a>
+      <a href="/tags/%E9%99%88%E8%BF%B0%E5%8F%A5/" class="label label-default mb">陈述句</a>
      
      
    </div>
@@ -836,6 +831,38 @@
    <div class="panel-footer">
      
       <a href="/tags/%E8%99%9A%E6%8B%9F/" class="label label-default mb">虚拟</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+      </div>
+      
+      <h3 class="panel-title mb-1x">
+        <a href="/tags/%E6%97%B6%E6%80%81/" title="#时态"># 时态</a>
+        <small class="text-muted">(Total 1 articles)</small>
+      </h3>
+      <div class="row">
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:10.895Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/tense/">时态</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%B6%E6%80%81/" class="label label-default mb">时态</a>
      
      
    </div>
@@ -882,10 +909,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.719Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.733Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/01/">一只与众不同的狗狗</a>
+       <a class="article-link" href="/2020/03/20/nightShare/02/">大大的小河马</a>
      </h3>
    </div>
    
@@ -954,82 +981,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.772Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/06/">马云</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.733Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/02/">大大的小河马</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.760Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
        <a class="article-link" href="/2020/03/20/nightShare/05/">爱乐之城(一)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.790Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/08/">爱乐之城(三)</a>
      </h3>
    </div>
    
@@ -1074,10 +1029,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.800Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.772Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/09/">说话技巧</a>
+       <a class="article-link" href="/2020/03/20/nightShare/06/">马云</a>
      </h3>
    </div>
    
@@ -1098,10 +1053,58 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.810Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.719Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/10/">改善早起疲倦的状态</a>
+       <a class="article-link" href="/2020/03/20/nightShare/01/">一只与众不同的狗狗</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.790Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/08/">爱乐之城(三)</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.800Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/09/">说话技巧</a>
      </h3>
    </div>
    
@@ -1146,6 +1149,30 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.810Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/10/">改善早起疲倦的状态</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.836Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
@@ -1170,10 +1197,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.873Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.851Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/14/">过去成就了现在的你</a>
+       <a class="article-link" href="/2020/03/20/nightShare/13/">关于拖延症的演讲</a>
      </h3>
    </div>
    
@@ -1194,10 +1221,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.851Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.873Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/13/">关于拖延症的演讲</a>
+       <a class="article-link" href="/2020/03/20/nightShare/14/">过去成就了现在的你</a>
      </h3>
    </div>
    
@@ -1290,30 +1317,6 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.938Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/18/">罗夏墨迹测试</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.948Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
@@ -1338,106 +1341,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.992Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.938Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/22/">为什么我们总是会怀疑自己的人生？</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.968Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/20/">批判性思维</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:12.009Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/24/">为什么只有主人能听懂自家的猫叫？</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:12.001Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/23/">马可·奥勒留</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:12.017Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/nightShare/25/">美国人的地理可以有多差?</a>
+       <a class="article-link" href="/2020/03/20/nightShare/18/">罗夏墨迹测试</a>
      </h3>
    </div>
    
@@ -1482,10 +1389,130 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.968Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/20/">批判性思维</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:12.017Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/25/">美国人的地理可以有多差?</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
        <time datetime="2020-03-20T10:22:12.024Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
        <a class="article-link" href="/2020/03/20/nightShare/26/">极北之地</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:12.001Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/23/">马可·奥勒留</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.992Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/22/">为什么我们总是会怀疑自己的人生？</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%99%9A%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">晚安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:12.009Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/nightShare/24/">为什么只有主人能听懂自家的猫叫？</a>
      </h3>
    </div>
    
@@ -1562,10 +1589,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.960Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:10.952Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/11/">妻管严</a>
+       <a class="article-link" href="/2020/03/20/moringShare/10/">祝你好运(一)</a>
      </h3>
    </div>
    
@@ -1586,10 +1613,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:10.952Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:10.960Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/10/">祝你好运(一)</a>
+       <a class="article-link" href="/2020/03/20/moringShare/11/">妻管严</a>
      </h3>
    </div>
    
@@ -1638,6 +1665,54 @@
      </div>
      <h3 class="article-title" itemprop="name">
        <a class="article-link" href="/2020/03/20/moringShare/13/">某样东西非常昂贵的特殊表达</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.006Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/16/">秒睡(crashed out)</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.025Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/18/">soup</a>
      </h3>
    </div>
    
@@ -1730,102 +1805,6 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.006Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/16/">秒睡(crashed out)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.051Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/20/">boss(二)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.025Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/18/">soup</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.035Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/19/">boss(一)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.044Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
@@ -1874,58 +1853,58 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.035Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/19/">boss(一)</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.051Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/20/">boss(二)</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.070Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
        <a class="article-link" href="/2020/03/20/moringShare/22/">有关妈妈的表达(二)</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.078Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/23/">run</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.093Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/25/">call(二)</a>
      </h3>
    </div>
    
@@ -1970,10 +1949,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.114Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.107Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/28/">You got me there</a>
+       <a class="article-link" href="/2020/03/20/moringShare/27/">there 相关表达</a>
      </h3>
    </div>
    
@@ -1994,10 +1973,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.107Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.078Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/27/">there 相关表达</a>
+       <a class="article-link" href="/2020/03/20/moringShare/23/">run</a>
      </h3>
    </div>
    
@@ -2090,6 +2069,30 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.093Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/25/">call(二)</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.127Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
@@ -2114,10 +2117,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.149Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.114Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/4/">俗语(四)</a>
+       <a class="article-link" href="/2020/03/20/moringShare/28/">You got me there</a>
      </h3>
    </div>
    
@@ -2162,6 +2165,54 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.155Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/5/">Goodbye的来源</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
+       <time datetime="2020-03-20T10:22:11.149Z" itemprop="datePublished">2020-03-20</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2020/03/20/moringShare/4/">俗语(四)</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
+     
+     
+   </div>
+   
+</article>
+
+
+        </div>
+        
+        <div class="col-md-6">
+          
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="panel-body">
+     <div class="article-meta">
        <time datetime="2020-03-20T10:22:11.162Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
@@ -2186,34 +2237,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.176Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.183Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/8/">移动支付表达</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/%E6%97%A9%E5%AE%89%E5%88%86%E4%BA%AB/" class="label label-default mb">早安分享</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.155Z" itemprop="datePublished">2020-03-20</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/5/">Goodbye的来源</a>
+       <a class="article-link" href="/2020/03/20/moringShare/9/">没有免费的午餐</a>
      </h3>
    </div>
    
@@ -2258,10 +2285,10 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2020-03-20T10:22:11.183Z" itemprop="datePublished">2020-03-20</time>
+       <time datetime="2020-03-20T10:22:11.176Z" itemprop="datePublished">2020-03-20</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2020/03/20/moringShare/9/">没有免费的午餐</a>
+       <a class="article-link" href="/2020/03/20/moringShare/8/">移动支付表达</a>
      </h3>
    </div>
    
